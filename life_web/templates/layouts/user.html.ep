@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Life:<%= title %></title>
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+  <link rel="stylesheet" type="text/css" href="user.css">
+</head>
+<body>
+<div class="container">
+
+<!-- header_strat -->
+<header class="navbar-fixed-top">
+  <div class="col-sm-3 header header-table text-center ">
+    <div class="header-middle">
+      <a href="/">LifeMail</a>
+    </div>
+  </div>
+  <div class="col-sm-9 header-table">
+    <form action="logout" method="POST">
+      <div class="header-middle">
+        ログインしました。<br>
+        ご利用いただきありがとうございます。
+      </div>
+      <div class="header-middle">
+        <input type="submit" class="btn-primary" value="ログアウト">
+      </div>
+    </form>
+  </div>
+</header>
+<!-- header_end -->
+
+<main><!-- main_strat -->
+<div class="content">
+
+<div class="col-sm-3"><!-- 左部固定のサイドバー -->
+  <ul class="nav fixed-sidebar nav-stacked text-center">
+    <li><a href="#header1">TOP画面へ</a></li>
+    <li><a href="#header2">めるくるとは</a></li>
+    <li><a href="#header3">個人情報変更</a></li>
+  </ul>
+</div><!-- col-sm-3_end -->
+
+<div class="col-sm-9">
+  <%= content %>
+</div><!-- col-sm-9_end -->
+
+</div><!-- content_end -->
+</main><!-- main_end -->
+
+<!-- footer_start -->
+<footer>
+  <small >&copy; Copyright (c) inaba All Rights Reserved.</small>
+</footer>
+<!-- footer_end -->
+
+</div><!-- #container -->
+
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+% layout 'user';
+% title 'TOPページ';
+% my $msg = stash('msg');
+
+<h2><%= $msg %></h2>
+テストIndex
