@@ -1,6 +1,0 @@
-% layout 'default';
-% title 'UserIndex';
-% my $msg = stash('msg');
-
-<h2><%= $msg %></h2>
-テストIndex
